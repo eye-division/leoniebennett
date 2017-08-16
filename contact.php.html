@@ -2,6 +2,7 @@
 layout: empty
 permalink: /contact.php.html
 ---
+
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<title>Contact Leonie Bennett</title>
@@ -30,6 +31,7 @@ permalink: /contact.php.html
   })();
 
 </script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 	</head>
 
 	<body>
@@ -41,28 +43,31 @@ permalink: /contact.php.html
 	<a href="thumbs.php%3Fcat=18.html" title="View 8 thumbnail images for silver and gold">silver and gold</a> | <a href="thumbs.php%3Fcat=20.html" title="View 6 thumbnail images for black and gold">black and gold</a> | <a href="thumbs.php%3Fcat=25.html" title="View 10 thumbnail images for semi-precious">semi-precious</a> | <a href="thumbs.php%3Fcat=26.html" title="View 6 thumbnail images for clip-on earrings">clip-on earrings</a> | <a href="thumbs.php%3Fcat=16.html" title="About">About</a> |  <a href="contact.php.html" title="Fill out our web form">contact</a><br />
         </div>
     <p></p>
+    <!--
+<input type="hidden" name="_to" value="leonie@leoniebennett.co.uk">
+            <input type="hidden" name="_cc" value="a.ward@eyedivision.com">
+    -->
 	<form action="/thanks/" method="post" id="contact-form">
 
       <fieldset>
 
-            <input type="hidden" name="_to" value="leonie@leoniebennett.co.uk">
-            <input type="hidden" name="_cc" value="a.ward@eyedivision.com">
-            <input type="hidden" name="_subject" value="Web form">
-            <p>
-            <label for="name">Name:</label>
-            <input type="text" name="name">
-            </p>
-            <p>
-            <label for="_replyto">Email:</label>
-            <input type="text" name="_replyto">
-            </p>
-            <p>
-            <label>Message</label>
-            <textarea name="message"></textarea>
-            </p>
-            {% if site.recaptcha_site_key %}
-            <div class="g-recaptcha" data-sitekey="{{ site.recaptcha_site_key }}"></div>
-            {% endif %}
+        <input type="hidden" name="_to" value="a.ward@eyedivision.com">
+        <input type="hidden" name="_subject" value="Web form">
+        <p>
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+        </p>
+        <p>
+        <label for="_replyto">Email:</label>
+        <input type="text" name="_replyto">
+        </p>
+        <p>
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        </p>
+        {% if site.recaptcha_site_key %}
+        <div class="g-recaptcha" data-sitekey="{{ site.recaptcha_site_key }}"></div>
+        {% endif %}
         <p>
             <input type="submit" value="Send message">
             </p>
