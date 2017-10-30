@@ -1,78 +1,126 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Leonie Bennett - contemporary jewellery</title>
-<meta name="description" content="Unique contemporary jewellery from Oxford-based designer maker" />
-<meta name="keywords" content="jewellery,contemporary, designer, one-off, semi-precious, precious, silver, gold" />
+---
+layout: home
+carousel:
+  - image: /assets/images/58f6352037015.jpg
+    caption:
+    link:
+  - image: /assets/images/4ccf4e817cc0c.jpg
+    caption:
+    link:
+  - image: /assets/images/507f2e15b9aae.jpg
+    caption:
+    link:
+  - image: /assets/images/58f63f9434076.jpg
+    caption:
+    link:
+  - image: /assets/images/58f6204655441.jpg
+    caption:
+    link:
+  - image: /assets/images/4cce895e89364.jpg
+    caption:
+    link:
+  - image: /assets/images/58f6656c128eb.jpg
+    caption:
+    link:
+  - image: /assets/images/58f5f70c830e5.jpg
+    caption:
+    link:
+  - image: /assets/images/58f67a529fdba.jpg
+    caption:
+    link:
+  - image: /assets/images/58f5253601de2.jpg
+    caption:
+    link:
 
-<meta name="author" content="Eye Division" />
-<meta name="Copyright" content="Copyright (c) Leonie Bennett" />
-<meta http-equiv="Expires" content="-1" />
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="css/basic.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="css/artist2.css" />
-<link rel="stylesheet" href="css/anythingslider.css" />
-<!--[if lt IE 8]>
-<link rel="stylesheet" href="/css/anythingslider-ie.css" type="text/css" media="screen" />
-<![endif]-->
-<script type="text/javascript" src="code/jquery-1.8.2.min.js"></script>
-<script src="code/jquery.anythingslider.min.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript">
-/* <![CDATA[ */
-$(document).ready(function() {
-	$('#slider').anythingSlider({
-		mode: 'f',
-		buildArrows: false,
-		buildNavigation: false,
-		buildStartStop: false,
-		startPanel: 1,
-		delay:4000,
-		animationTime:800,
-		autoPlay: true
-	});
-});
-/* ]]> */
-</script>
-<script type="text/javascript">
+_options:
+  image:
+    width: 1200
+    height: 1200
+    resize_style: contain
+    mime_type: image/jpeg
+_comments:
+  carousel: Edit the slideshow
+  link: Optional web link from the slide
+  caption: optional caption
+---
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-16735011-21']);
-  _gaq.push(['_trackPageview']);
+    <div class="editable">
+    <p>This is the demo editable first paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, in magnam placeat. Ex illo ipsa libero voluptatem necessitatibus modi fugit odit omnis. Sequi voluptatem mollitia voluptatum ipsum placeat, quaerat laudantium!</p>
+    </div>
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-</head>
-<body>
-<a name="top"></a>
-<div id="container">
-<div id="content">
-    <div id="header"><a href="index.html" title="Return home" accesskey="1"><h1>Leonie Bennett</h1></a></div>
-<div id="topnav"><a href="index.html" title="Return to the home page">home</a> |
-	<a href="thumbs.php%3Fcat=18.html" title="View 8 thumbnail images for silver and gold">silver and gold</a> | <a href="thumbs.php%3Fcat=20.html" title="View 6 thumbnail images for black and gold">black and gold</a> | <a href="thumbs.php%3Fcat=25.html" title="View 10 thumbnail images for semi-precious">semi-precious</a> | <a href="thumbs.php%3Fcat=26.html" title="View 6 thumbnail images for clip-on earrings">clip-on earrings</a> | <a href="thumbs.php%3Fcat=16.html" title="About">About</a> |  <a href="contact.php.html" title="Fill out our web form">contact</a><br />
+    {% if page.carousel %}
+    <!-- <div class="two-thirds no-gutter"> -->
+    <section>
+      <div class="flexslider">
+          <ul class="slides">
+            {% for slides in page.carousel %}
+            <li>
+              {% if slides.link %}
+                <a href="{{ site.baseurl }}{{ slides.link }}" title="View project">
+              {% endif %}
+              {% include img.html src=slides.image width=960 max-h=400 fit=clip alt=slides.caption %}
+              {% if slides.link %}
+              </a>
+            {% endif %}
+              {% if slides.caption %}
+              <p class="flex-caption">{% if slides.link %}<a href="{{ site.baseurl }}{{ slides.link }}" title="View project">{% endif %}{{ slides.caption }}{% if slides.link %}&nbsp;<svg class="icon icon__white icon--readmore"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-double_angle_right" /></svg></a>{% endif %}</p>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
         </div>
-    <ul id="slider">
-		<li><a href="index.html#"><img src="pictures/58f6352037015.jpg" alt="image" width="313" height="320"></a></li>
-				<li><a href="index.html#"><img src="pictures/4ccf4e817cc0c.jpg" alt="image" width="320" height="320"></a></li>
-				<li><a href="index.html#"><img src="pictures/507f2e15b9aae.jpg" alt="image" width="427" height="320"></a></li>
-				<li><a href="index.html#"><img src="pictures/58f63f9434076.jpg" alt="image" width="320" height="320"></a></li>
-				<li><a href="index.html#"><img src="pictures/58f6204655441.jpg" alt="image" width="320" height="320"></a></li>
-				<li><a href="index.html#"><img src="pictures/4cce895e89364.jpg" alt="image" width="320" height="320"></a></li>
-				<li><a href="index.html#"><img src="pictures/58f6656c128eb.jpg" alt="image" width="320" height="320"></a></li>
-				<li><a href="index.html#"><img src="pictures/58f5f70c830e5.jpg" alt="image" width="320" height="320"></a></li>
-				<li><a href="index.html#"><img src="pictures/58f67a529fdba.jpg" alt="image" width="320" height="320"></a></li>
-				<li><a href="index.html#"><img src="pictures/58f5253601de2.jpg" alt="image" width="320" height="320"></a></li>
-		</ul>
-	<div id="credits">&copy; All work is copyright the artist, no reproduction without permission.<br /><a href="https://www.eyedivision.com" title="An Eye Gallery system site" target="_blank"><img src="images/eyegallery.gif" alt="an Eye Gallery site" width="30" height="31" /></a><br />
-	An <a href="https://www.eyedivision.com" title="Site by Eye Division" target="_blank">Eye Gallery</a> site</div>
-		</div>	<!-- end content -->
-	</div><!-- end container -->
-	</body>
-	</html>
-	
+      </section>
+      <!-- </div> -->
+      {% endif %}
+
+      <!-- Regular page promotions on front page -->
+      {% for section in site.pages %}
+
+      {% if section.frontpage %}
+
+        {% if section.main_image_path %}
+          <section class="gallery-cover has-cover" style="background-image: url({{ section.main_image_path }});">
+        {% else %}
+          <section class="gallery-cover has-cover" style="background-image: url('http://placekitten.com/g/1200/300');">
+        {% endif %}
+          <a href="{{ section.url | prepend: site.baseurl }}">
+            <div class="scrim has-cover">
+            <article class="gallery">
+              <header class="gallery-header">
+                <h2 class="title">{{ section.frontpagetitle }}</h2>
+              </header>
+              {% if section.description_markdown %}
+                <p>{{ section.description_markdown | markdownify }}<br>
+                <span class="readmore">Read more <span>{{nextPost.title}} <svg class="icon"><use xlink:href="#icon-double_angle_right" /></svg></span>
+                </p>
+              {% endif %}
+          </article>
+          </div>
+          </a>
+        </section>
+
+      {% endif %}
+
+    {% endfor %}
+
+      <!-- Galleries -->
+
+      {% for gallery in site.gallery %}
+        {% if gallery.frontpage %}
+          <section class="gallery-cover {% if gallery.main_image_path %}has-cover{% endif %}" {% if gallery.main_image_path %}style="background-image: url({{ gallery.main_image_path | prepend: gallery.baseurl }});"{% endif %}>
+            <a href="{{ gallery.url }}">
+              <div class="scrim {% if gallery.main_image_path %}has-cover{% endif %}">
+              <article class="gallery">
+                <header class="gallery-header">
+                  <h2 class="title">{{ gallery.title }}</h2>
+                </header>
+                {% if gallery.homepage_markdown %}
+                  <p>{{ gallery.homepage_markdown | markdownify }}</p>
+                {% endif %}
+            </article>
+            </div>
+          </a>
+        </section>
+        {% endif %}
+      {% endfor %}
+

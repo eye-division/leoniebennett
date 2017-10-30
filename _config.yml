@@ -1,13 +1,14 @@
 # External gems
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
 
 exclude:
   - "/vendor/"
 
 # Site settings
 title: Leonie Bennett
-subtitle: Leonie Bennett Eye Gallery built on Bourbon and Neat
+subtitle: Leonie Bennett
 name: Leonie Bennett
 description: Leonie Bennett art gallery
 # Base URL of site (i.e. /blog). It should always start with a slash,
@@ -15,7 +16,7 @@ description: Leonie Bennett art gallery
 # root of your server.
 baseurl: ""
 # the base hostname & protocol for your site
-url: "http://www.leoniebennett.co.uk"
+url: "https://www.leoniebennett.co.uk"
 logo: "/siteicon.png"
 email: leonie@leoniebennett.co.uk
 
@@ -25,6 +26,7 @@ markdown: kramdown
 # paginate_path: "/page:num/"
 # inter_post_navigation: false
 permalink: pretty
+highlightjs_theme: "monokai-sublime"
 
 # Image CDN
 imagecdn:
@@ -33,23 +35,44 @@ imagecdn:
 
 # Collections
 collections:
-#     projects:
-#         output: true
-#         permalink: /projects/:path/
+    gallery:
+        output: true
+        permalink: /gallery/:path/
+        _hide_content: true
 
 
 # Defaults Example
 defaults:
-#     -
-#         scope:
-#             path: ""
-#             type: "projects"
-#         values:
-#             layout: "project"
+    -
+        scope:
+            path: ""
+            type: "gallery"
+        values:
+            layout: "gallery"
+
+# Payment settings
+# Environment settings
+appurl:
+    # development: "http://0.0.0.0:4000"
+    #
+    # staging URL
+    # staging: "http://black-hare.cloudvent.net/"
+    #
+    # production URL
+    # production: ""
+
+# Snipcart API key
+# snipcart_api_key:
+
+# PayPal merchant ID
+# paypal_id:
+
+# Disqus comments
+# disqus_shortname:
 
 
 # Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+ga_tracking_id: "UA-16735011-21"
 
 # Google Recaptcha for contact form
 recaptcha_site_key: 6LdLOB4UAAAAADsvT54rj2NRw_IvfZiSMKYkq8eP
@@ -137,10 +160,10 @@ social:
 # These are for automatically generating sharing metadata for FB and Twitter
 # OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
 protocols:
-    fb_image: "/siteicon.png"
+    fb_image: "/assets/logo.png"
     fb_image_width: 480
     fb_image_height: 480
     fb_image_type: "image/png"
 
-    twitter_image: "/siteicon.png"
+    twitter_image: "/assets/logo.png"
 

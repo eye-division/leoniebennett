@@ -1,8 +1,16 @@
-- title: "Posts"
-  href: "/posts/"
-  
-- title: "Projects"
-  href: "/projects/"
-  
+- title: "Home"
+  href: "/"
+
+- title: "Silver and gold"
+  href: "/gallery/silver-and-gold/"
+- title: "Black and gold"
+  href: "/gallery/black-and-gold/"
+- title: "Semi-precious"
+  href: "/gallery/semi-precious/"
+- title: "Clip-on earrings"
+  href: "/gallery/clip-on-earrings/"
+
 - title: "About"
   href: "/about/"
+- title: "Contact"
+  href: "/contact/"
