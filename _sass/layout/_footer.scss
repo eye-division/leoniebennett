@@ -3,13 +3,10 @@
 // -----------------------------------------------------------------------------
 
 .site-footer {
-    @include outer-container;
+
     padding: 1em;
     background-color: $light-gray;
-    .wrapper {
-        @include outer-container;
-        padding: 0 1em;
-    }
+
     a {
         //color: $link-color;
         &:active,
@@ -27,10 +24,7 @@
 ///  Site Navigation (left)
 
 .site-navigation {
-    @include span-columns(12);
-    @include media ($small) {
-        @include span-columns(6);
-    }
+
     font-size: 0.9em;
     ul {
         @extend %default-ul;
