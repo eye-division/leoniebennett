@@ -7,7 +7,7 @@ frontpage: true
 _gallery_date: 2016-05-01 00:00:00
 permalink: /gallery/silver-and-gold/
 archive: false
-display_title: true
+display_title: false
 main_image_path: /assets/images/58f5f344b19f1.jpg
 image_caption: 
 images:

@@ -22,7 +22,7 @@
 
 .gallery {
 
-    /// make it a flexbox so items can be aligned vertically
+    /// fallback: make it a flexbox so items can be aligned vertically
     @include display(flex);
     @include align-items(flex-start);
     @include flex-direction(row);

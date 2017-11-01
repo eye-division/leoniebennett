@@ -9,6 +9,17 @@ input {
     }
 }
 
+fieldset {
+  background-color: transparent;
+  border: none;
+  padding: $base-spacing 0;
+}
+#{$all-text-inputs},
+select[multiple=multiple],
+textarea {
+  background-color: $white;
+
+}
 /// Shopping cart
 
 form.cart {

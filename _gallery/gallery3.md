@@ -6,7 +6,7 @@ homepage_description_markdown:
 _gallery_date:
 frontpage: true
 permalink: /gallery/semi-precious/
-display_title: true
+display_title: false
 archive: false
 main_image_path: /assets/images/58f49a201f4cb.jpg
 image_caption: 

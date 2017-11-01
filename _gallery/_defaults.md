@@ -8,7 +8,7 @@ permalink:
 archive: false
 main_image_path:
 image_caption: 
-display_title: true
+display_title: false
 images:
   - image_path:
     image_title:

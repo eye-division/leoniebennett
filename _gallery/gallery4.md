@@ -6,7 +6,7 @@ homepage_description_markdown:
 _gallery_date:
 frontpage: true
 permalink: /gallery/clip-on-earrings/
-display_title: true
+display_title: false
 archive: false
 main_image_path: /assets/images/58f5260ae91dc.jpg
 image_caption: 
