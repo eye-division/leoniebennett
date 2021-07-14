@@ -1,10 +1,7 @@
 # External gems
-gems:
+plugins:
   - jekyll-sitemap
-  - jekyll-paginate
 
-exclude:
-  - "/vendor/"
 
 # Site settings
 title: Leonie Bennett
