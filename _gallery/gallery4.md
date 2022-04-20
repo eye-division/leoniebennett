@@ -1,33 +1,32 @@
 ---
-title: "Clip-on earrings"
-description_markdown: >-
-
-homepage_description_markdown: 
+title: Clip-on earrings
+description_markdown:
+homepage_description_markdown:
 _gallery_date:
-frontpage: true
+frontpage: false
 permalink: /gallery/clip-on-earrings/
 display_title: false
 archive: false
 main_image_path: /assets/images/58f5260ae91dc.jpg
-image_caption: 
+image_caption:
 images:
-  - image_path: '/assets/images/58f5260ae91dc.jpg'
-    image_title: "silver bird with 24 ct gold"
+  - image_path: /assets/images/58f5260ae91dc.jpg
+    image_title: silver bird with 24 ct gold
     image_description:
-  - image_path: '/assets/images/58f5253601de2.jpg'
-    image_title: "split silver with 24ct gold gold"
+  - image_path: /assets/images/58f5253601de2.jpg
+    image_title: split silver with 24ct gold gold
     image_description:
-  - image_path: '/assets/images/59023cab29b46.jpg'
-    image_title: "silver marquises with 24ct gold"
+  - image_path: /assets/images/59023cab29b46.jpg
+    image_title: silver marquises with 24ct gold
     image_description:
-  - image_path: '/assets/images/58f525a89abba.jpg'
-    image_title: "pierced silver drops"
+  - image_path: /assets/images/58f525a89abba.jpg
+    image_title: pierced silver drops
     image_description:
-  - image_path: '/assets/images/58f525db7af78.jpg'
-    image_title: "large pearl silver cup"
+  - image_path: /assets/images/58f525db7af78.jpg
+    image_title: large pearl silver cup
     image_description:
-  - image_path: '/assets/images/58f5c5f4bd43d.jpg'
-    image_title: "green tourmaline and silver"
+  - image_path: /assets/images/58f5c5f4bd43d.jpg
+    image_title: green tourmaline and silver
     image_description:
 _options:
   image_path:
