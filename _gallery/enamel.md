@@ -2,7 +2,7 @@
 title: enamel
 description_markdown:
 homepage_description_markdown: Enamel
-frontpage: true
+frontpage: false
 _gallery_date:
 permalink: /gallery/enamel/
 archive: false
