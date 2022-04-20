@@ -31,7 +31,9 @@ carousel:
   - image: /assets/images/58f5253601de2.jpg
     caption:
     link:
-
+  - image: /uploads/lbennett08.jpg
+    caption:
+    link:
 _options:
   image:
     width: 1200
@@ -44,7 +46,7 @@ _comments:
   caption: optional caption
 ---
 
-    <div class="editable">
+<div class="editable">
 
     </div>
 
@@ -88,9 +90,9 @@ _comments:
                 <h2 class="title">{{ section.frontpagetitle }}</h2>
               </header>
               {% if section.description_markdown %}
-                <p>{{ section.description_markdown | markdownify }}<br>
+                <p>{{ section.description_markdown | markdownify }}<br />
                 <span class="readmore">Read more <span>{{nextPost.title}} <svg class="icon"><use xlink:href="#icon-double_angle_right" /></svg></span>
-                </p>
+                </span></p>
               {% endif %}
           </article>
           </div>
@@ -122,3 +124,4 @@ _comments:
         {% endif %}
       {% endfor %}
 
+</section>
