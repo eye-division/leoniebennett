@@ -3,7 +3,7 @@ title: Black and gold
 description_markdown:
 homepage_description_markdown:
 _gallery_date:
-frontpage: true
+frontpage: false
 permalink: /gallery/black-and-gold/
 display_title: false
 archive: false
@@ -11,7 +11,7 @@ main_image_path: /assets/images/58f6204655441.jpg
 image_caption:
 images:
   - image_path: /assets/images/58f6204655441.jpg
-    image_title: 'fan earrings - silver, oxidised silver and 24ct gold'
+    image_title: fan earrings - silver, oxidised silver and 24ct gold
     image_description:
   - image_path: /assets/images/58f6352037015.jpg
     image_title: 'bird earrings: oxidised silver with 24ct gold'
@@ -49,4 +49,3 @@ _comments:
   frontpage: Show this gallery on the homepage
   homepage_description_markdown: Text used on homepage if shown
 ---
-

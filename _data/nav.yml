@@ -1,16 +1,16 @@
-- title: "Home"
-  href: "/"
-
-- title: "Silver and gold"
-  href: "/gallery/silver-and-gold/"
-- title: "Black and gold"
-  href: "/gallery/black-and-gold/"
-- title: "Semi-precious"
-  href: "/gallery/semi-precious/"
-- title: "Clip-on earrings"
-  href: "/gallery/clip-on-earrings/"
-
-- title: "About"
-  href: "/about/"
-- title: "Contact"
-  href: "/contact/"
+- title: Home
+  href: /
+- title: Enamel
+  href: /gallery/enamel/
+- title: Silver and gold
+  href: /gallery/silver-and-gold/
+- title: Black and gold
+  href: /gallery/black-and-gold/
+- title: Semi-precious
+  href: /gallery/semi-precious/
+- title: Clip-on earrings
+  href: /gallery/clip-on-earrings/
+- title: About
+  href: /about/
+- title: Contact
+  href: /contact/

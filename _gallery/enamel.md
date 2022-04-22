@@ -2,9 +2,9 @@
 title: enamel
 description_markdown:
 homepage_description_markdown: Enamel
-frontpage: true
+frontpage: false
 _gallery_date:
-permalink: https://www.leoniebennett.co.uk/gallery/enamel/
+permalink: /gallery/enamel/
 archive: false
 main_image_path: /uploads/lbennett02-1.jpg
 image_caption: silver and enamel earrings
